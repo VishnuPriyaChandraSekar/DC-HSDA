@@ -1,4 +1,4 @@
-# DC Homelessness Navigator Backend
+# DC's Homelessness Navigator Backend
 This is the backend for the HSDS API Java based implementation for DC's homelessness resource navigator. This proect will aim to closely match the published API endpoints of the HSDS API standard by Open Referral ([link](https://openreferral.readthedocs.io/en/latest/hsda/hsda/)), however there will be some deviations to the standard due to our custom needs and where they are, they will be published and made available.
 
 To begin:
