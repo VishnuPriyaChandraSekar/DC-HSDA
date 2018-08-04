@@ -1,0 +1,6 @@
+micronaut:
+    application:
+        name: DC-HSDA
+    server:
+        port: 8080
+                

@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: hsds.app
+---
+testFramework: junit
+sourceLanguage: java
