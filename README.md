@@ -1,11 +1,15 @@
-# DC's Homelessness Navigator Backend
-This is the backend for the HSDS API Java based implementation for DC's homelessness resource navigator. This proect will aim to closely match the published API endpoints of the HSDS API standard by Open Referral ([link](https://openreferral.readthedocs.io/en/latest/hsda/hsda/)), however there will be some deviations to the standard due to our custom needs and where they are, they will be published and made available.
+# DC's HSDA Implementation
+This is the implementation for DC's HSDA, written in Java. This project will aim to closely match the published API endpoints of the HSDA standard by Open Referral ([link](https://openreferral.readthedocs.io/en/latest/hsda/hsda/)), however there will be some deviations to the standard due to our custom needs and where they are, they will be published and made available.
 
 To begin:
-- Download the latest version of Java 10/jdk 10 from OpenJdk
+- Download the latest version of open jdk 10
 - Install Postgres 10
-- Install Maven 3.5.X (3.5.4 as of this writing)
+- Install Gradle 4.9.
 - Your favorite IDE (strongly recommend IntelliJ)
 - Clone this repo
 
-For any discussions of this project, contact me on Asana or Slack (Code For DC's slack/#homeless channel), or open an Issue here.
+In order to run this app, do one of the following:
+ - Run `./gradlew run`
+ - Open your IDE settings and follow the instructions from here - [Micronaut IDE documentation](https://docs.micronaut.io/latest/guide/index.html#ideSetup)
+
+For any discussions of this project, contact me on Slack (Code For DC's slack/#homeless channel), or open an issue here.
