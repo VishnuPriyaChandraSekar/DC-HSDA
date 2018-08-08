@@ -53,6 +53,11 @@ shadowJar {
 jar {
     baseName = 'DC-HSDA'
     version = '0.1'
+    manifest {
+        attributes(
+                'Main-Class': 'configuration.Application'
+        )
+    }
 }
 
 run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1')
