@@ -50,14 +50,15 @@ shadowJar {
     mergeServiceFiles()
 }
 
-jar {
-    baseName = 'DC-HSDA'
-    version = '0.1'
-    manifest {
-        attributes(
-                'Main-Class': 'configuration.Application'
-        )
-    }
+
+task copyToLib(type: Copy) {
+    into "$buildDir/lib"
+    from(configurations.compile)
+}
+
+task stage {
+    dependsOn(copyToLib)
+    dependsOn installDist
 }
 
 run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1')
