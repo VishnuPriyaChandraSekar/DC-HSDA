@@ -29,3 +29,7 @@ build/*
 *.bat
 out/*
 .gradle/*
+gradlew.bat
+
+# Include these files
+!gradle/wrapper/gradle-wrapper.jar
