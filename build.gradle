@@ -50,15 +50,9 @@ shadowJar {
     mergeServiceFiles()
 }
 
-
-task copyToLib(type: Copy) {
-    into "$buildDir/lib"
-    from(configurations.compile)
-}
-
 task stage {
-    dependsOn(copyToLib)
-    dependsOn installDist
+    dependsOn clean
+    dependsOn shadowJar
 }
 
 run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1')
