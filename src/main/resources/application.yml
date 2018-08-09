@@ -1,6 +1,7 @@
 micronaut:
     application:
         name: DC-HSDA
-    server:
-        port: 8080
-                
+    environments: heroku
+#    server:
+#        port: 8080
+#                
