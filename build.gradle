@@ -29,7 +29,7 @@ repositories {
 
 dependencyManagement {
     imports {
-        mavenBom 'io.micronaut:bom:1.0.0.M3'
+        mavenBom 'io.micronaut:bom:1.0.0.M4'
     }
 }
 
@@ -44,6 +44,8 @@ dependencies {
     runtime "ch.qos.logback:logback-classic:1.2.3"
     testCompile "junit:junit:4.12"
     testCompile "io.micronaut:inject-java"
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '5.0.9.RELEASE'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.2.5'
 }
 
 shadowJar {
